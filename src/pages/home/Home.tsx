@@ -1,38 +1,26 @@
-import React from 'react'
 
 function Home() {
   return (
     <>
-      <div style={{
-        width:'100vw',
-        display: 'flex',
-        justifyContent: 'center'
-      }}>
-        <div>
-          <div style={{
-            width: '80vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-          }}>
-            <h2>Bem vinde ao meu blog pessoal</h2>
-            <p>Destaque as suas opiniões e pensamentos</p>
+      <div className='bg-indigo-900 flex justify-center'>
+        <div className="container grid grid-cols-2 text-white">
+          <div className='flex flex-col gap-4 items-center justify-center py-4'>
+            <h2 className="text-5xl font-bold">Bem vinde ao meu blog pessoal</h2>
+            <p className="text-xl">Destaque as suas opiniões e pensamentos</p>
+            <div className="flex justify-around gap-4">
+              <div className="rounded text-white border-white border-solid border-2 py-2 px-4">
+                Nova postagem
+                </div>
+            </div>
           </div>
-          <div style={{
-            width: '80vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-          }}>
+          <div className='flex justify-center'>
             <img 
               src="https://i.imgur.com/VpwApCU.png" 
               alt="Imagem da página home"
-              width="400px"
+              width="w-2/3"
             />
-
           </div>
         </div>
-
       </div>
     </>
   )
