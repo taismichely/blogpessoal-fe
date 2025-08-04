@@ -8,7 +8,7 @@ import { RotatingLines } from "react-loader-spinner"
 function DeletarTema() {
 
     const navigate = useNavigate()
-
+    
     const [tema, setTema] = useState<Tema>({} as Tema)
     const [isLoading, setIsLoading] = useState<boolean>(false)
     
