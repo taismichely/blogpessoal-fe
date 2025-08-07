@@ -90,7 +90,7 @@ function FormPostagem() {
       navigate('/postagens')
     }
 
-    async function gerarNovaPostagem(e: ChangeEvent<HTMLInputElement>) {
+    async function gerarNovaPostagem(e: ChangeEvent<HTMLFormElement>) {
       e.preventDefault()
       setIsLoading(true)
 
