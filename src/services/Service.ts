@@ -3,7 +3,7 @@ import axios from "axios";
 //Requisições HTTP 
 
 const api = axios.create({
-  baseURL: 'https://blog-pessoal-4odp.onrender.com'
+  baseURL: import.meta.env.VITE_API_URL
 })
 
 export const cadastrarUsuario = async (url:string, dados: Object, setDados: Function) => {
